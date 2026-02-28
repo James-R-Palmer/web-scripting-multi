@@ -1,0 +1,88 @@
+:root {
+  /* Spacing Scale */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 2rem;     /* 32px */
+  --space-4: 4rem;     /* 64px */
+
+  /* Colors */
+  --color-bg: #ffffff;      /* White background */
+  --color-text: #111111;    /* Dark text */
+  --color-muted: #555555;   /* Secondary text/borders */
+  --color-primary: #007bff; /* Blue for links/buttons */
+
+  /* Layout and Effects */
+  --max-content-width: 60rem;
+  --border-radius: 0.25rem;
+  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Base Typography */
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: var(--space-4);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: var(--space-3);
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: var(--space-2);
+}
+/* Ensure padding around sections for comfortable spacing */
+section {
+  padding: var(--space-3) 0;
+  margin: var(--space-3) 0;
+}
+
+/* Add padding to the body so content isn't cramped against window edges */
+body {
+  padding: var(--space-2);
+}
+/* 1. Utility Class: .container - Constrains width and centers content */
+.container {
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+/* 2. Utility Class: .stack - Adds vertical spacing between direct children (a modern layout trick) */
+.stack > * + * {
+  margin-top: var(--space-2);
+}
+
+/* 3. Utility Class: .muted - Changes text color to the muted variable */
+.muted {
+  color: var(--color-muted);
+}
+
+/* 4. Utility Class: .btn - Basic button styling */
+.btn {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--shadow-subtle);
+}
