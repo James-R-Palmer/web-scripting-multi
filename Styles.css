@@ -6,10 +6,10 @@
   --space-4: 4rem;     /* 64px */
 
   /* Colors */
-  --color-bg: #ffffff;      /* White background */
-  --color-text: #111111;    /* Dark text */
-  --color-muted: #555555;   /* Secondary text/borders */
-  --color-primary: #007bff; /* Blue for links/buttons */
+  --color-bg: #C2DFFF;      
+  --color-text: #111111;    
+  --color-muted: #555555;   
+  --color-primary: #007bff; 
 
   /* Layout and Effects */
   --max-content-width: 60rem;
@@ -86,3 +86,4 @@ body {
   cursor: pointer;
   box-shadow: var(--shadow-subtle);
 }
+
